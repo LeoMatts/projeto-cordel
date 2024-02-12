@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "Akiona.otf";
+    src: url("/pratice/ex002/fontes/akiona/Akiona.otf");
+}
+
+@font-face {
+    font-family: "BobbaTea.ttf";
+    src: url("/pratice/ex002/fontes/bobba_tea/BobbaTea.ttf");
+}
+
+:root {
+    --fonte-akiona: "Akiona", cursive;
+    --fonte-padrao: arial, sans-serif, helvetica;
+    --fonte-bobba: "BobbaTea", cursive, arial
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html,
+body {
+    min-height: 100vh;
+    background-color: darkgray;
+
+
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 2em;
+}
+
+header>h1 {
+    padding-top: 70px;
+    font-variant: small-caps;
+}
+
+header>p {
+    padding-bottom: 50px;
+}
+
+header a,
+footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+header a:hover,
+footer a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    font-family: var(--fonte-akiona);
+    line-height: 2em;
+    padding-left: 30px;
+    font-size: 1.8em;
+}
+
+section p {
+    padding-bottom: 2em;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+
+}
+
+section.imagem {
+    background-color: rgba(39, 39, 39, 0.527);
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.541);
+    color: white;
+background-attachment: fixed;
+}
+
+section.imagem>p {
+    background-color: rgba(0, 0, 0, 0.541);
+    display: inline-block;
+    padding: 15px;
+    border-radius: 15px;
+    text-shadow: 1px 2px 3px black;
+}
+
+section#img01 {
+    background-image: url("/pratice/ex002/images/sergey-shmidt-koy6FlCCy5s-unsplash.jpg");
+    background-position: right center;
+    background-size: cover;
+}
+
+section#img02 {
+    background-image: url("/pratice/ex002/images/annie-spratt-5cFwQ-WMcJU-unsplash.jpg");
+
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
